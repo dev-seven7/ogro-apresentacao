@@ -202,6 +202,13 @@ td.who{font-family:"Oswald",sans-serif;font-size:12px;letter-spacing:.1em;text-t
 .chk .ct{font-family:"Oswald",sans-serif;font-weight:500;text-transform:uppercase;font-size:16px;letter-spacing:.13em;margin-bottom:8px;line-height:1.3}
 .chk li.done .ct{color:var(--ember)}
 .chk .cd{font-size:15px;line-height:1.7;color:var(--ink-2);max-width:66ch}
+.datas{display:grid;gap:12px;grid-template-columns:1fr}
+@media (min-width:640px){.datas{grid-template-columns:1fr 1fr}}
+@media (min-width:980px){.datas{grid-template-columns:1fr 1fr 1fr}}
+.data{display:flex;align-items:center;gap:16px;background:var(--white);border-radius:3px;padding:14px 18px}
+.data .dc{flex:none;width:72px;height:72px;border-radius:50%;border:2px solid var(--ember);display:flex;align-items:center;justify-content:center;text-align:center;font-family:"Oswald",sans-serif;font-weight:500;font-size:15px;letter-spacing:.04em;color:var(--ember);line-height:1.1;padding:6px}
+.data .dc.long{font-size:12px}
+.data .dn{font-size:15px;line-height:1.45;color:var(--ink)}
 .bigline{border-top:1px solid var(--ink);margin:44px 0 0;padding-top:22px}
 .end{text-align:center;padding:80px 30px}
 .end .quote{margin:0 auto;max-width:24ch;text-align:center}
@@ -980,6 +987,24 @@ html{scroll-behavior:smooth}
   <p style="max-width:44ch;margin:0 auto 30px">Precisa ser a marca que, no fim de um dia cheio, vem naturalmente &agrave; cabe&ccedil;a do consumidor:</p>
   <div class="quote" style="font-weight:500;font-size:clamp(26px,5.4vw,58px)">&ldquo;Hoje eu mere&ccedil;o um <span class="em">Ogro</span>.&rdquo;</div>
   <p style="max-width:44ch;margin:30px auto 0">&Eacute; isso que a gente quer construir.</p>
+</section>
+
+<!-- DATAS -->
+<section class="slide">
+  <h2>Pr&oacute;ximas datas comerciais que podem ser trabalhadas</h2>
+  <div class="datas">
+    <div class="data"><div class="dc">12/10</div><div class="dn">Dia das Crian&ccedil;as (apenas para aproveitar o feriado)</div></div>
+    <div class="data"><div class="dc">15/10</div><div class="dn">Dia do Professor</div></div>
+    <div class="data"><div class="dc">20/10</div><div class="dn">Dia Internacional do Chef</div></div>
+    <div class="data"><div class="dc">31/10</div><div class="dn">Halloween</div></div>
+    <div class="data"><div class="dc">03/11</div><div class="dn">Dia do Sandu&iacute;che</div></div>
+    <div class="data"><div class="dc">11/11</div><div class="dn">11.11, pr&eacute;-Black Friday</div></div>
+    <div class="data"><div class="dc">27/11</div><div class="dn">Black Friday</div></div>
+    <div class="data"><div class="dc">30/11</div><div class="dn">Cyber Monday</div></div>
+    <div class="data"><div class="dc">09/12</div><div class="dn">Dia do Profissional da Culin&aacute;ria</div></div>
+    <div class="data"><div class="dc long">24 e 25/12</div><div class="dn">Natal</div></div>
+    <div class="data"><div class="dc">31/12</div><div class="dn">V&eacute;spera de Ano-Novo</div></div>
+  </div>
 </section>
 
 <!-- CHECKLIST -->
